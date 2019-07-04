@@ -1,36 +1,25 @@
 import React from "react";
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    maxWidth: 752
-  },
-  demo: {
-    backgroundColor: theme.palette.background.paper
-  },
-  title: {
-    margin: `${theme.spacing(4)}px 0 ${theme.spacing(2)}px`
-  }
-});
-
 import ACTIONS from '../redux/action.js';
 import {connect} from 'react-redux';
 
-const mapStateToProps = state => ({
+import {ReduxStore, Item} from '../ts-interfaces/interfaces.js';
+
+const mapStateToProps = (state: ReduxStore) => ({
   items: state.items
 });
 
-const mapDispatchToProps = dispatch => ({
-  createItem: item => dispatch(ACTIONS.createItem(item)),
-  deleteItem: id => dispatch(ACTIONS.deleteItem(id))
+const mapDispatchToProps = (dispatch: Function) => ({
+  createItem: (item: string) => dispatch(ACTIONS.createItem(item)),
+  deleteItem: (id: number) => dispatch(ACTIONS.deleteItem(id))
 });
 
-class ToDO extends React.Component {
-  constructor() {
-    super();
+class ToDO extends React.Component<HTMLElement> {
+  constructor(props: ReduxStore) {
+    super(props);
     this.state = {item: ""};
     this.generate = () => {
-      return this.props.items.map(item => (
+      return this.props.items.map((item: Item) => (
           <div className="todo" key={item.id}>
             <div className="item-description">
               {item.description}
@@ -69,14 +58,12 @@ class ToDO extends React.Component {
 
 
   render() {
-    const {classes} = this.props;
     return (
       <div>
         <div>
           <form noValidate autoComplete="off" onSubmit={this.handleSubmit}>
               <input
                 value={this.state.item}
-                className={classes.TextField}
                 name="item"
                 onChange={this.handleChange}
               />
