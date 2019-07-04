@@ -1,9 +1,12 @@
 import React from 'react';
 import ToDO from './ToDO.jsx';
 import {Provider as ReduxProvider} from 'react-redux';
-import configureStore from "../redux/store";
+import configureStore from "../redux/store.js";
+import {defaultState} from '../redux/reducer.js';
+// import {ReduxStore} from '../ts-interfaces/interfaces.js';
+// import {Item} from '../ts-interfaces/interfaces.js';
 
-const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
+const reduxStore = configureStore(defaultState);
 
 class App extends React.Component {
   render() {
