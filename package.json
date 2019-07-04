@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:build": "webpack -d -w",
+    "dev:build": "webpack -w",
     "dev:start": "nodemon server/index.js"
   },
   "repository": {
@@ -36,6 +36,7 @@
   "dependencies": {
     "@material-ui/core": "^4.1.3",
     "@material-ui/icons": "^4.2.1",
+    "@types/react-redux": "^7.1.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
