@@ -1,17 +1,4 @@
 import React from "react";
-import {
-  withStyles,
-  List,
-  ListItem,
-  ListItemSecondaryAction,
-  ListItemText,
-  IconButton,
-  Grid,
-  TextField,
-  Button,
-  FormControl
-} from "@material-ui/core";
-import DeleteIcon from "@material-ui/icons/Delete";
 
 const styles = theme => ({
   root: {
@@ -104,4 +91,4 @@ class ToDO extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(ToDO));
+export default connect(mapStateToProps, mapDispatchToProps)(ToDO);

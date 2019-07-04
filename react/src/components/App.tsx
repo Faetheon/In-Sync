@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDO from './ToDO.jsx';
 import {Provider as ReduxProvider} from 'react-redux';
-import configureStore from "./../redux/store.js";
+import configureStore from "../redux/store";
 
 const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
 
