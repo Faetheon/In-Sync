@@ -1,0 +1,18 @@
+.column {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-self: center;
+}
+
+.todo {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-self: center;
+  margin-top:20px;
+}
+
+.item-description {
+  margin: 10px;
+}
