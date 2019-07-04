@@ -1,11 +1,12 @@
 import ACTIONS from './action.js';
 import _ from 'lodash';
+import {ReduxStore} from '../ts-interfaces/interfaces.js';
 
-const defaultState = {
+export const defaultState: ReduxStore = {
   items: []
 };
 
-const todoReducer = (state = defaultState, action) => {
+const todoReducer = (state = defaultState, action: any) => {
   switch (action.type) {
 
     case ACTIONS.Types.CREATE_ITEM: {
