@@ -1,16 +1,26 @@
-import ACTIONS from './action.js';
+import ACTIONS from './action.ts';
 import _ from 'lodash';
-import {ReduxStore} from '../ts-interfaces/interfaces.js';
+import {ReduxStore} from '../ts-interfaces/interfaces.ts';
 
 export const defaultState: ReduxStore = {
-  items: []
+  items: [],
+  aboutNathan: {
+    name: "Nathan",
+    age: new Date().getFullYear() - new Date(1999, 3).getFullYear(),
+    skills: [
+      {
+        name: "JavaScript",
+        workExp: new Date().getFullYear() - new Date(2018, 6).getFullYear(),
+        isLibrary: false
+      }
+    ]
+  }
 };
 
 const todoReducer = (state = defaultState, action: any) => {
   switch (action.type) {
 
     case ACTIONS.Types.CREATE_ITEM: {
-      console.log(action);
 
       let item = action.payload;
       let newItem = {id: state.items.length + 1, description: item};

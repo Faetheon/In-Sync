@@ -1,8 +1,8 @@
 import {createStore, applyMiddleware} from 'redux';
 import logger from 'redux-logger';
-import reducer from './reducer.js';
+import reducer from './reducer.ts';
 
-import {ReduxStore} from '../ts-interfaces/interfaces.js';
+import {ReduxStore} from '../ts-interfaces/interfaces.ts';
 // interface Item {
 //   id: number,
 //   description: string
