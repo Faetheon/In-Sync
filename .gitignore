@@ -1,2 +1,2 @@
 node_modules
-react/dist/bundle.js
+./react/dist/bundle.js
