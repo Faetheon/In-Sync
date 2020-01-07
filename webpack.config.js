@@ -3,7 +3,6 @@ const path = require('path');
 const SRC_DIR = path.join(__dirname, '/react/src');
 const DIST_DIR = path.join(__dirname, '/react/dist');
 
-console.log(SRC_DIR)
 module.exports = {
   mode: process.env.MODE || "development",
   entry: path.join(__dirname, '/react/src'),
