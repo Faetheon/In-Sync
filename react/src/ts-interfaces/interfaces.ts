@@ -10,7 +10,6 @@ export interface ReduxStore {
 
 export interface Skill {
   name: string,
-  workExp: number,
   parent?: string
 }
 

@@ -1,16 +1,16 @@
 import ACTIONS from './action';
 import _ from 'lodash';
 import { ReduxStore } from '../ts-interfaces/interfaces';
+import moment from 'moment';
 
 export const defaultState: ReduxStore = {
   items: [],
   aboutNathan: {
     name: "Nathan",
-    age: new Date().getFullYear() - new Date(1999, 3).getFullYear(),
+    age: moment().diff('1999-03-04', 'years'),
     skills: [
       {
         name: "JavaScript",
-        workExp: new Date().getFullYear() - new Date(2018, 6).getFullYear(),
       }
     ]
   }

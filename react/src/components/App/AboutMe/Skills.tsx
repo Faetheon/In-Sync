@@ -10,9 +10,6 @@ const Skills = () => {
       {skills.map((skill) => (
         <div key={skill.name}>
           {skill.name}
-          <div>
-            How long I've worked with {skill.name}: {skill.workExp === 1 ? `${skill.workExp} year` : `${skill.workExp} years`}
-          </div>
           {
             skill.parent ? `Library of ${skill.parent}` : ''
           }
