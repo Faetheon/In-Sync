@@ -11,6 +11,10 @@ module.exports = {
     filename: "bundle.js"
   },
   resolve: {
+    root: path.resolve(__dirname),
+    alias: {
+      "@interfaces": path.resolve(__dirname, "/src/ts-interfaces")
+    },
     enforceExtension: false,
     extensions: [".tsx", ".js", ".ts", ".jsx"]
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { ReduxStore } from 'Interfaces/interfaces';
+import { ReduxStore } from '@interfaces/interfaces';
 
 const Skills = () => {
   const skills = useSelector((state: ReduxStore) => state.aboutNathan.skills);

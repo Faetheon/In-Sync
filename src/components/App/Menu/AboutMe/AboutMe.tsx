@@ -2,7 +2,7 @@ import React from "react";
 
 import { useSelector } from 'react-redux';
 
-import { ReduxStore } from 'Interfaces/interfaces.js';
+import { ReduxStore } from '@interfaces/interfaces.js';
 import Skills from "../Skills";
 
 const AboutMe = () => {
