@@ -5,10 +5,10 @@ import { defaultState } from '../../redux/reducer';
 import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import AboutMe from './AboutMe/AboutMe';
-import Menu from './Menu';
-import Home from './Home';
-import Apps from './Apps';
+import AboutMe from './Menu/AboutMe/AboutMe';
+import Menu from './Menu/Menu';
+import Home from './Menu/Home';
+import Apps from './Menu/Apps';
 // import {ReduxStore} from '../ts-interfaces/interfaces.js';
 // import {Item} from '../ts-interfaces/interfaces.js';
 

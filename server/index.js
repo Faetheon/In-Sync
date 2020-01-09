@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(express.static(`${__dirname}/../react/dist/`));
+app.use(express.static(`${__dirname}/../dist/`));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.search(bodyParser.json());
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../react/dist/index.html"));
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 app.listen(PORT, () => {

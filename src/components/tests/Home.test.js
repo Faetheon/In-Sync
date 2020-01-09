@@ -8,7 +8,7 @@ configure({ adapter: new Adapter() });
 import React from "react";
 import { shallow, mount, render } from "enzyme";
 
-import Home from "../App/Home.tsx";
+import Home from "../App/Menu/Home.tsx";
 
 test("Returns html string", () => {
   expect(shallow(<Home />).type("string")).toBe(true);

@@ -2,23 +2,11 @@ import React from "react";
 
 import { useSelector } from 'react-redux';
 
-import { ReduxStore, Item, Nathan } from '../../../ts-interfaces/interfaces.js';
-import Skills from "./Skills";
-
-interface AboutMe {
-  props: {
-    items: Array<Item>,
-    aboutNathan: Nathan,
-  },
-  generateSkills: Function,
-}
+import { ReduxStore } from 'Interfaces/interfaces.js';
+import Skills from "../Skills";
 
 const AboutMe = () => {
   const aboutNathan = useSelector((state: ReduxStore) => state.aboutNathan);
-
-  // class AboutMe extends React.Component {
-
-
 
   return (
     <div>
