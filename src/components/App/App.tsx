@@ -9,8 +9,8 @@ import AboutMe from './Menu/AboutMe/AboutMe';
 import Menu from './Menu/Menu';
 import Home from './Menu/Home';
 import Apps from './Menu/Apps';
-// import {ReduxStore} from '../ts-interfaces/interfaces.js';
-// import {Item} from '../ts-interfaces/interfaces.js';
+// import {ReduxStore} from '../@interfaces/interfaces.js';
+// import {Item} from '../@interfaces/interfaces.js';
 
 const reduxStore = configureStore(defaultState);
 const history = createBrowserHistory();
