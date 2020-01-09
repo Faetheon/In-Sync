@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from 'react-redux';
 
 import { ReduxStore, Item, Nathan } from '../../../ts-interfaces/interfaces.js';
-import Skills from "./Skills.tsx";
+import Skills from "./Skills";
 
 interface AboutMe {
   props: {
