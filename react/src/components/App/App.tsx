@@ -1,14 +1,14 @@
 import React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
-import configureStore from "../redux/store.ts";
-import { defaultState } from '../redux/reducer.ts';
+import configureStore from "../../redux/store";
+import { defaultState } from '../../redux/reducer';
 import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import AboutMe from './App/AboutMe/AboutMe.tsx';
-import Menu from './App/Menu.tsx';
-import Home from './App/Home.tsx';
-import Apps from './App/Apps.tsx';
+import AboutMe from './AboutMe/AboutMe';
+import Menu from './Menu';
+import Home from './Home';
+import Apps from './Apps';
 // import {ReduxStore} from '../ts-interfaces/interfaces.js';
 // import {Item} from '../ts-interfaces/interfaces.js';
 
