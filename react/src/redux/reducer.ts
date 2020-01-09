@@ -1,6 +1,6 @@
-import ACTIONS from './action.ts';
+import ACTIONS from './action';
 import _ from 'lodash';
-import {ReduxStore} from '../ts-interfaces/interfaces.ts';
+import { ReduxStore } from '../ts-interfaces/interfaces';
 
 export const defaultState: ReduxStore = {
   items: [],
@@ -11,7 +11,6 @@ export const defaultState: ReduxStore = {
       {
         name: "JavaScript",
         workExp: new Date().getFullYear() - new Date(2018, 6).getFullYear(),
-        isLibrary: false
       }
     ]
   }
@@ -23,7 +22,7 @@ const todoReducer = (state = defaultState, action: any) => {
     case ACTIONS.Types.CREATE_ITEM: {
 
       let item = action.payload;
-      let newItem = {id: state.items.length + 1, description: item};
+      let newItem = { id: state.items.length + 1, description: item };
       let newState = _.cloneDeep(state);
       newState.items.push(newItem);
       return newState;
@@ -31,7 +30,7 @@ const todoReducer = (state = defaultState, action: any) => {
 
     case ACTIONS.Types.DELETE_ITEM: {
       let newState = _.cloneDeep(state);
-      let index = _.findIndex(newState.items, {id: action.payload});
+      let index = _.findIndex(newState.items, { id: action.payload });
       newState.items.splice(index, 1);
       return newState;
     }
