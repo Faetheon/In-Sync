@@ -4,6 +4,7 @@ import configureStore from "../../redux/store";
 import { defaultState } from '../../redux/reducer';
 import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import styled from 'styled-components';
 
 import AboutMe from './Menu/AboutMe/AboutMe';
 import Menu from './Menu/Menu';
@@ -14,20 +15,26 @@ import Apps from './Menu/Apps';
 
 const reduxStore = configureStore(defaultState);
 const history = createBrowserHistory();
+const Footer = styled.div`
+  height: 200px;
+  padding-top: 50px;
+`;
+const MenuContainer = styled.div``;
 
 class App extends React.Component {
   render() {
     return (
       <ReduxProvider store={reduxStore}>
         <Router history={history}>
-          <div className="App">
+          <MenuContainer>
             <Menu />
-          </div>
+          </MenuContainer>
           <Switch>
             <Route exact path='/Apps' render={() => <Apps />} />
             <Route exact path='/AboutMe' render={() => <AboutMe />} />
             <Route exact path='/Home' render={() => <Home />} />
           </Switch>
+          <Footer />
         </Router>
       </ReduxProvider>
     );
