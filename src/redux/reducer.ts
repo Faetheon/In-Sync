@@ -16,7 +16,7 @@ export const defaultState: ReduxStore = {
   }
 };
 
-const todoReducer = (state = defaultState, action: any) => {
+const rootReducer = (state = defaultState, action: any) => {
   switch (action.type) {
 
     case ACTIONS.Types.CREATE_ITEM: {
@@ -40,4 +40,4 @@ const todoReducer = (state = defaultState, action: any) => {
   }
 }
 
-export default todoReducer;
+export default rootReducer;
