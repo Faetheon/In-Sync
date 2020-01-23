@@ -1,14 +1,13 @@
 import React from 'react';
+import Card from '@shared/Card';
 
-class Home extends React.Component {
+const Home = () => {
 
-  render() {
-    return (
-      <div>
-        Home
-      </div>
-    );
-  }
+  return (
+    <div className="home">
+      <Card />
+    </div>
+  );
 }
 
 export default Home;
