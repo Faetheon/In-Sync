@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from 'react-redux';
 
 import { ReduxStore } from '@interfaces/interfaces.js';
-import Skills from "../Skills";
+import Skills from "./Skills";
 
 const AboutMe = () => {
   const aboutNathan = useSelector((state: ReduxStore) => state.aboutNathan);
