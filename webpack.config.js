@@ -5,18 +5,18 @@ const DIST_DIR = path.join(__dirname, "/dist");
 
 module.exports = {
   mode: process.env.MODE || "development",
-  entry: path.join(__dirname, "/src"),
+  entry: SRC_DIR,
   output: {
     path: DIST_DIR,
     filename: "bundle.js"
   },
   resolve: {
     alias: {
-      "@interfaces": path.resolve(__dirname, "/src/ts-interfaces"),
-      "@shared": path.resolve(__dirname, "src/components/SharedComponents")
+      interfaces: path.resolve(__dirname, "./src/ts-interfaces"),
+      shared: path.resolve(__dirname, "./src/Components/SharedComponents")
     },
     enforceExtension: false,
-    extensions: [".tsx", ".js", ".ts", ".jsx"]
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
   },
   module: {
     rules: [
