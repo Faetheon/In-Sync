@@ -1,6 +1,6 @@
 import ACTIONS from './action';
 import _ from 'lodash';
-import { ReduxStore } from '@interfaces/interfaces';
+import { ReduxStore } from 'interfaces/interfaces';
 import moment from 'moment';
 
 export const defaultState: ReduxStore = {

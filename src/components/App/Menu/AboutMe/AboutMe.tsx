@@ -2,12 +2,11 @@ import React from "react";
 
 import { useSelector } from 'react-redux';
 
-import { ReduxStore } from '@interfaces/interfaces.js';
+import { ReduxStore } from 'interfaces/interfaces';
 import Skills from "./Skills";
 
 const AboutMe = () => {
   const aboutNathan = useSelector((state: ReduxStore) => state.aboutNathan);
-
   return (
     <div>
       <div>My name: {aboutNathan.name}</div>
