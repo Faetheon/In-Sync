@@ -7,7 +7,6 @@ interface Menu {
 
 function Menu(props: any) {
   function handleClick(location: string) {
-    console.log();
     props.history.push(location);
   };
 
