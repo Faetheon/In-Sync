@@ -6,7 +6,7 @@ import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import styled from 'styled-components';
 
-import AboutMe from './Menu/AboutMe/AboutMe';
+import AboutMe from './Menu/AboutMe';
 import Menu from './Menu/Menu';
 import Home from './Menu/Home';
 import Apps from './Menu/Apps';

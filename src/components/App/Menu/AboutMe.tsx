@@ -8,8 +8,8 @@ const AboutMe = () => {
   const aboutNathan = useSelector((state: ReduxStore) => state.aboutNathan);
   return (
     <div>
-      <div>My name: {aboutNathan.name}</div>
-      <div>My age: {aboutNathan.age}</div>
+      <div>Me: {aboutNathan.name}</div>
+      <div>My mission: {aboutNathan.mission}</div>
     </div>
   );
 }
