@@ -4,22 +4,15 @@ import configureStore from "../../redux/store";
 import { defaultState } from '../../redux/reducer';
 import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import styled from 'styled-components';
 
 import AboutMe from './Menu/AboutMe';
 import Menu from './Menu/Menu';
 import Home from './Menu/Home';
 import Apps from './Menu/Apps';
-// import {ReduxStore} from '../@interfaces/interfaces.js';
-// import {Item} from '../@interfaces/interfaces.js';
+import { Footer, MenuContainer } from 'sharedFiles/styledComponents';
 
 const reduxStore = configureStore(defaultState);
 const history = createBrowserHistory();
-const Footer = styled.div`
-  height: 200px;
-  padding-top: 50px;
-`;
-const MenuContainer = styled.div``;
 
 const App = () => {
   return (
