@@ -17,5 +17,6 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log("\033[2J");
   console.log(`Server is running on ${PORT}.`);
 });
