@@ -8,13 +8,7 @@ export interface ReduxStore {
   aboutNathan: Nathan
 }
 
-export interface Skill {
-  name: string,
-  parent?: string
-}
-
 export interface Nathan {
   name: string,
   age: number,
-  skills: Array<Skill>
 }
