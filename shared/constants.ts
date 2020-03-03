@@ -1,3 +1,4 @@
+// Redux constants
 import { ActionTypes } from "interfaces/constants";
 
 export const actionTypes: ActionTypes = {
