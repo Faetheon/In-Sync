@@ -2,7 +2,7 @@ import React from "react";
 
 import { useSelector } from 'react-redux';
 
-import { ReduxStore } from 'interfaces/interfaces';
+import { ReduxStore } from 'interfaces/redux';
 
 const AboutMe = () => {
   const aboutNathan = useSelector((state: ReduxStore) => state.aboutNathan);
