@@ -21,24 +21,22 @@ const Footer = styled.div`
 `;
 const MenuContainer = styled.div``;
 
-class App extends React.Component {
-  render() {
-    return (
-      <ReduxProvider store={reduxStore}>
-        <Router history={history}>
-          <MenuContainer>
-            <Menu />
-          </MenuContainer>
-          <Switch>
-            <Route exact path='/Apps' render={() => <Apps />} />
-            <Route exact path='/AboutMe' render={() => <AboutMe />} />
-            <Route exact path='/Home' render={() => <Home />} />
-          </Switch>
-          <Footer />
-        </Router>
-      </ReduxProvider>
-    );
-  }
+const App = () => {
+  return (
+    <ReduxProvider store={reduxStore}>
+      <Router history={history}>
+        <MenuContainer>
+          <Menu />
+        </MenuContainer>
+        <Switch>
+          <Route exact path='/Apps' render={() => <Apps />} />
+          <Route exact path='/AboutMe' render={() => <AboutMe />} />
+          <Route exact path='/Home' render={() => <Home />} />
+        </Switch>
+        <Footer />
+      </Router>
+    </ReduxProvider>
+  )
 }
 
 export default App; 
