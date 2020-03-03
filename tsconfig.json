@@ -4,7 +4,8 @@
     "baseUrl": "./",
     "paths": {
       "interfaces/*": ["src/ts-interfaces/*"],
-      "shared/*": ["src/components/SharedComponents/*"]
+      "sharedFiles/*": ["shared/*"],
+      "sharedComponents/*": ["src/components/SharedComponents/*"]
     },
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "es2015", "es2016"],

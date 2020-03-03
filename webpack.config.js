@@ -13,7 +13,11 @@ module.exports = {
   resolve: {
     alias: {
       interfaces: path.resolve(__dirname, "./src/ts-interfaces"),
-      shared: path.resolve(__dirname, "./src/Components/SharedComponents")
+      sharedFiles: path.resolve(__dirname, "./shared"),
+      sharedComponents: path.resolve(
+        __dirname,
+        "./src/Components/SharedComponents"
+      )
     },
     enforceExtension: false,
     extensions: [".js", ".jsx", ".ts", ".tsx"]
