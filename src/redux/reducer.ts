@@ -8,6 +8,11 @@ export const defaultState: ReduxStore = {
   aboutNathan: {
     name: "Nathan",
     age: moment().diff('1999-03-04', 'years'),
+    mission: "My mission is to keep progressing in my skills and knowledge. I learn something new every day whether its a new library or a new language. I find no mountain is too high and though I may fall I won't give up.",
+    likes: ["How to train your dragon franchise", "Dungeon diving games", "Reading", "Finding simple yet effective solutions"],
+    dream: "I want to create or discover new worlds and help others find them through virtual reality, games, or space exploration.",
+    education: ["Highschool diploma", "Coding bootcamp"],
+    aboutMe: "I love my family and am an avid reader. Always on the lookout for new litrpg books I enjoy the ideas that the authors have. I also enjoy gaming and the occasional theological disscussion."
   }
 };
 

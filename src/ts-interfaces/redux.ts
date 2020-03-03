@@ -11,4 +11,9 @@ export interface ReduxStore {
 export interface Nathan {
   name: string,
   age: number,
+  mission: string,
+  likes: Array<string>,
+  dream: string,
+  education: Array<string>,
+  aboutMe: string
 }
