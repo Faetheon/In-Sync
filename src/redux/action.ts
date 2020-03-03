@@ -13,6 +13,5 @@ const deleteItem = (id: number) => ({
 
 export default {
   createItem,
-  deleteItem,
-  actionTypes
+  deleteItem
 };
