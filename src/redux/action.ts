@@ -1,22 +1,18 @@
-//Types
-const Types = {
-  CREATE_ITEM: "CREATE_ITEM",
-  DELETE_ITEM: "DELETE_ITEM"
-}
+import { actionTypes } from "sharedFiles/constants";
 
 //Actions
 const createItem = (task: string) => ({
-  type: Types.CREATE_ITEM,
+  type: actionTypes.CREATE_ITEM,
   payload: task
 });
 
 const deleteItem = (id: number) => ({
-  type: Types.DELETE_ITEM,
+  type: actionTypes.DELETE_ITEM,
   payload: id
 });
 
 export default {
   createItem,
   deleteItem,
-  Types
+  actionTypes
 };

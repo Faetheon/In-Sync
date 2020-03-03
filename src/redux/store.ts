@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import reducer from './reducer';
 
-import { ReduxStore } from 'interfaces/interfaces';
+import { ReduxStore } from 'interfaces/redux';
 // interface Item {
 //   id: number,
 //   description: string
