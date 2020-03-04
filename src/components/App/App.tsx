@@ -5,15 +5,16 @@ import { defaultState } from '../../redux/reducer';
 import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import AboutMe from './Menu/AboutMe';
-import Menu from './Menu/Menu';
-import Home from './Menu/Home';
-import Apps from './Menu/Apps';
+import AboutMe from './AboutMe';
+import Menu from './Menu';
+import Home from './Home';
+import SideApps from './SideApps';
 import { Footer, MenuContainer } from 'sharedFiles/styledComponents';
 
 const reduxStore = configureStore(defaultState);
 const history = createBrowserHistory();
 
+// Main entry point for all components
 const App = () => {
   return (
     <ReduxProvider store={reduxStore}>
@@ -22,9 +23,9 @@ const App = () => {
           <Menu />
         </MenuContainer>
         <Switch>
-          <Route exact path='/Apps' render={() => <Apps />} />
+          <Route exact path='/SideApps' render={() => <SideApps />} />
           <Route exact path='/AboutMe' render={() => <AboutMe />} />
-          <Route exact path='/Home' render={() => <Home />} />
+          <Route exact path='/(|Home)' render={() => <Home />} />
         </Switch>
         <Footer />
       </Router>

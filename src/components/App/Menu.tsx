@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { TopBar, TopBarOption } from 'sharedFiles/styledComponents';
 
 interface Menu {
-  handleClick: Function
+  handleClick: Function;
 }
 
 function Menu(props: any) {
@@ -16,8 +16,8 @@ function Menu(props: any) {
       <TopBarOption onClick={() => handleClick('/Home')}>
         Home
       </TopBarOption>
-      <TopBarOption onClick={() => handleClick('/Apps')}>
-        Apps
+      <TopBarOption onClick={() => handleClick('/SideApps')}>
+        Side Apps
       </TopBarOption>
       <TopBarOption onClick={() => handleClick('/AboutMe')}>
         About Me
