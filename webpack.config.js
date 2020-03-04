@@ -10,6 +10,11 @@ module.exports = {
     path: DIST_DIR,
     filename: "bundle.js"
   },
+  devServer: {
+    contentBase: "./dist",
+    historyApiFallback: true,
+    hot: true
+  },
   resolve: {
     alias: {
       interfaces: path.resolve(__dirname, "./src/ts-interfaces"),
